@@ -10,6 +10,7 @@ class Button():
         if not variables.gameIsEnd:
             for _ in range(9):
                 if ((205*(_%3))+340 > variables.pos[0] > (205*(_%3))+140) and ((205*(_//3))+340 > variables.pos[1] > (205*(_//3))+140):
+                    return 0
                     variables.slot = _ + 1
                     break
                 elif(_==8):
